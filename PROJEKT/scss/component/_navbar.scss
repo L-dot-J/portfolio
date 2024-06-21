@@ -1,0 +1,18 @@
+.navbar-nav{
+    .nav-item{
+        a{
+            font-size: large;
+            color: black;
+            margin-left: map-get($spacers, 5 );
+        }
+        a:hover{
+            color: $danger;
+            text-shadow: 2px 2px 8px $success;
+            font-weight: 600;
+        }
+    }
+}    
+.navbar-toggler:focus {
+    box-shadow: none ;
+}
+

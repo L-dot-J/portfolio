@@ -1,0 +1,21 @@
+@import 'mixin/mixin';
+
+@import 'vars/vars.scss';
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import 'component/navbar';
+
+@import 'component/homePage';
+
+@import 'component/about_us';
+
+@import 'component/summer';
+
+@import 'component/winter';
+
+@import 'component/f&q';
+
+@import 'component/contact';
+
+@import 'component/footer';

@@ -1,0 +1,68 @@
+// colors start
+
+$primary:       #FFC8DD;
+$secondary:     #FFAFCC;
+$success:       #CDB4DB;
+$info:          #BDE0FE;
+$danger:        #8b4eaf     ;
+$warning:       #82c1fc;
+$white:         white;
+$black:         rgb(0, 0, 0);
+$red:           rgb(161, 0, 0);
+
+
+$theme-colors: (
+  "primary":       $primary,
+  "secondary":     $secondary,
+  "success":       $success,
+  "info":          $info,
+  "danger":        $danger,
+  "warning":       $warning,
+  "white":         $white,
+  "black":         $black,
+  "red":           $red,
+);
+
+// colors end
+
+// spacers start
+
+$spacer: 1rem;
+$spacer1: 0.25rem;
+$spacers: (
+  0: 0,
+  1: $spacer1,
+  2: $spacer1 * 2,
+  3: $spacer1 * 3,
+  4: $spacer1 * 4,
+  5: $spacer1 * 5,
+  6: $spacer1 * 6,
+  7: $spacer1 * 7,
+  8: $spacer1 * 8,
+  9: $spacer1 * 9,
+  10: $spacer1 * 10,
+  12: $spacer1 * 12,
+  14: $spacer1 * 14,
+  16: $spacer1 * 16,
+  18: $spacer1 * 18,
+  20: $spacer1 * 20,
+  );
+
+// spacers end
+
+// button start
+
+$btn-padding-y-xl:     map-get($spacers, $key: 5);
+$btn-padding-x-xl:     map-get($spacers, $key: 6);
+$btn-font-size-xl:     map-get($spacers, $key: 12);
+$btn-border-radius-xl: map-get($spacers, $key: 2);
+ 
+//button end
+
+//accordion start
+
+$accordion-icon-color:                    $danger;
+$accordion-icon-active-color:             $success;
+
+
+//accordion end

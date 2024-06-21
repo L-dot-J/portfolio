@@ -1,0 +1,19 @@
+.summer-edit{
+    & .visina{
+        height: 40vh;
+    }
+
+}
+.summer-edit:hover{
+    border: 2px solid $secondary ;
+    border-radius: 2px;
+    background-color: rgba($primary, 0.1);
+}
+.shadow-edit{
+    text-shadow: 2px 2px  $success;
+}
+.custom-popover-summer{
+    text-align: center;
+    max-width: 700px;
+    border-color: $primary; 
+}

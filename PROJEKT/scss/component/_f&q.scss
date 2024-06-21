@@ -1,0 +1,12 @@
+.accordion-button {
+    background-color: rgb($success, 0.1);
+    color:black;
+    padding: 20px ;
+
+    &:not(.collapsed){
+        background-color: rgb($success, 0.1);
+
+    }
+
+}
+

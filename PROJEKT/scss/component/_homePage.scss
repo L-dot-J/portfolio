@@ -1,0 +1,49 @@
+.display-2{
+    margin-top: 10rem;
+
+    &--naslov{
+        display: inline-block;
+        text-transform: capitalize;
+        font-weight: 900;
+
+    }
+    &--opis{
+        font-size: 2rem;
+        display: block;
+    }
+}
+.bg-edit{
+    background: linear-gradient($primary,$white);
+    background-size: cover;
+    height: 100vh;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+}
+
+.button-animate {
+    animation: pulse 2s infinite; 
+    animation-timing-function: ease-in-out;
+}
+
+@media (min-width: 992.98px) { 
+    .custom-height {
+      height: 100vh;
+    }
+    .custom-image{
+        width: 100%;
+        z-index: 1;
+        
+    }
+}
+@media (max-width: 992.98px) {
+  .custom-half-height {
+    height: 50vh;
+  }
+} 

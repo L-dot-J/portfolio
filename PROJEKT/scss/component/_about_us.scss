@@ -1,0 +1,42 @@
+
+.stil{
+    @include stil_texta;
+}
+
+.object-fit-cover {
+    object-fit: cover; 
+    width: 100%;     
+    height: 100%;    
+}
+.vertical{
+    writing-mode: vertical-lr;
+    text-orientation:sideways;
+}
+.kvadrat{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@media (max-width: 768.98px) {
+    .vertical{
+        writing-mode: horizontal-tb;
+        text-orientation:unset;
+        text-align: center;
+    }
+  }
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5); 
+    }
+}
+
+.pic-animate:hover {
+    animation: scale 2s ; 
+    animation-timing-function: ease-in-out;
+}

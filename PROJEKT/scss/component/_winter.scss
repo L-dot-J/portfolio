@@ -1,0 +1,24 @@
+.shadow-edit-winter{
+    text-shadow: 2px 2px  $info;
+}
+.edit-pic{
+    & img{
+        border: 2px solid $info;
+        border-spacing: 10px;
+        padding: 4px;
+    }
+}
+.winter-edit:hover{
+    border: 2px solid $info ;
+    border-radius: 2px;
+    background-color: rgba($warning, 0.1);
+}
+.custom-popover {
+    text-align: center;
+    max-width: 700px;
+    border-color: $warning; 
+}
+.popover-header{
+    background-color: $info;
+}
+  
