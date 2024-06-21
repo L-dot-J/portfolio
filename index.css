@@ -42,17 +42,17 @@ header h3 {
 }
 
 main {
-    max-width: 70vw;
+    width: 60vw;
     margin: 0 auto;
-    padding: 2em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+   
 }
 
 section {
-    flex: 1 1 30%;
-    margin: 2em 1em;
+    flex: 1 1 calc(33.333% - 2em);
+    margin: 1em;
     background-color: #fff;
     padding: 1.5em;
     border-radius: 8px;
@@ -136,9 +136,12 @@ footer p {
 @media (max-width: 768px) {
     main {
         flex-direction: column;
+        width: 90vw;
+    
     }
 
     section {
-        width: 100%;
+        flex: 1 1 100%;
+        margin: 1em 0;
     }
 }
