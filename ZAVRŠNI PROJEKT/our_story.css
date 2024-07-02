@@ -1,0 +1,112 @@
+@import url("./base.css");
+@import url("./header.css");
+@import url("./upper_navigation.css");
+@import url("./footer.css");
+@import url("./media_for_nav.css");
+.cover {
+  height: 600px;
+  position: relative;
+  margin: -150px auto 0px;
+  z-index: -1;
+  width: 100%;
+}
+.cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.7;
+}
+.cover h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-family: "Marcellus SC";
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 27px;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.button {
+  position: absolute;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  color: white;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  font-size: 30px;
+  opacity: 0.9;
+  z-index: 999;
+  cursor: pointer;
+}
+.article {
+  padding: 30px 26px 30px;
+}
+
+.article p {
+  font-family: "Ibarra Real Nova";
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 25.2px;
+}
+.article_picture {
+  width: 100vw;
+}
+
+.article_picture img {
+  width: 100%;
+  height: 55vw;
+  object-fit: cover;
+}
+@media screen and (max-width: 838px) {
+  .cover {
+    margin: -175px auto 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form button {
+    width: 100%;
+    background-color: rgb(126, 116, 110);
+    margin: 14px 0px 73px;
+  }
+
+  .article_picture img {
+    height: 30vh;
+  }
+  .cover {
+    height: 70vw;
+    margin: 0px auto 0px;
+  }
+  .cover img {
+    object-fit: contain;
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cover h1 {
+    white-space: wrap;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .cover h1 {
+    font-size: 30px;
+    letter-spacing: 15px;
+  }
+}
+@media screen and (max-width: 359px) {
+  .logo img {
+    width: 100px;
+  }
+}

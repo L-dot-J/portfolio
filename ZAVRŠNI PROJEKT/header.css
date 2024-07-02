@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  z-index: 1001;
+  margin-bottom: 5px;
+  padding: 7px 0px;
+}
+.header a {
+  font-size: 12.6px;
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  transition: color 1s;
+}
+.header a:hover {
+  color: rgb(199, 185, 177);
+}
+.info {
+  display: flex;
+  height: 22.6px;
+  gap: 12.6px;
+  align-items: center;
+}
+.info a {
+  text-decoration: none;
+}
+.social_media {
+  display: flex;
+  height: 26px;
+  gap: 10.2px;
+  margin-right: 10px;
+}
+.social_media img {
+  max-height: 100%;
+  width: auto;
+  transition: opacity 1s;
+}
+.social_media img:hover {
+  opacity: 0.5;
+}

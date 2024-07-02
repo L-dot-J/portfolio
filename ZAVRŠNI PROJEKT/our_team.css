@@ -1,0 +1,156 @@
+@import url("./base.css");
+@import url("./header.css");
+@import url("./upper_navigation.css");
+@import url("./footer.css");
+@import url("./media_for_nav.css");
+
+.cover {
+  height: 600px;
+  position: relative;
+  margin-top: -136px;
+  z-index: -1;
+}
+.cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.5;
+}
+
+.button {
+  position: absolute;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  color: white;
+  margin: -50px 0px 0px 50%;
+  font-size: 30px;
+  opacity: 0.7;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.main_title {
+  color: white;
+  font-size: 42px;
+  font-family: "Marcellus SC";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.content_wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.main_section_small {
+  margin-top: 25px;
+  width: 418px;
+  height: 371;
+}
+.img_container {
+  width: 418px;
+  height: 292px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.content_wrap .img_container img {
+  width: 418px;
+  height: 292px;
+  transition: scale 1s;
+}
+.content_wrap .img_container img:hover {
+  scale: 1.2;
+}
+.content_wrap h2 {
+  font-size: 24.5px;
+  font-family: "Marcellus SC";
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.content_wrap article {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Ibarra Real Nova";
+  color: white;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.spec_dis {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 996px) {
+  .content_wrap .img_container img {
+    width: 45vw;
+    height: auto;
+  }
+  .img_container {
+    width: 45vw;
+    height: auto;
+  }
+  .main_section_small {
+    width: 45vw;
+    height: auto;
+  }
+  .content_wrap {
+    height: auto;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 838px) {
+  .cover {
+    margin-top: -170px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content_wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .content_wrap .img_container img {
+    width: 85vw;
+  }
+  .img_container {
+    width: 85vw;
+  }
+  .main_section_small {
+    width: 85vw;
+  }
+  .cover {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cover {
+    height: 50vw;
+  }
+  .cover img {
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .main_title {
+    font-size: 30px;
+    letter-spacing: 15px;
+  }
+  .logo img {
+    width: 100px;
+  }
+}

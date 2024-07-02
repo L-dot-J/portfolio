@@ -1,0 +1,151 @@
+@import url("./base.css");
+@import url("./header.css");
+@import url("./upper_navigation.css");
+@import url("./footer.css");
+@import url("./media_for_nav.css");
+
+.main_title {
+  color: white;
+  font-size: 42px;
+  font-family: "Marcellus SC";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 63px;
+}
+.content_wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 50%;
+}
+
+.main_section_small {
+  margin-top: 25px;
+  width: 200px;
+  /* height: 276; */
+}
+.img_container {
+  width: 200px;
+  height: 140px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.main .img_container img {
+  width: 200px;
+  height: 140px;
+  transition: scale 1s;
+}
+.main .img_container img:hover {
+  scale: 1.2;
+}
+.main h2 {
+  font-size: 24.5px;
+  font-family: "Marcellus SC";
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.main article {
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-family: "Ibarra Real Nova";
+  color: white;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.main label {
+  flex-basis: 100%;
+  text-align: center;
+  line-height: 3em;
+  border: 1px solid white;
+  width: min-content;
+  margin: 3em 419.094px; 
+  text-wrap: nowrap;
+  padding: 0em 2em;
+  font-family: "Marcellus SC";
+}
+.main input {
+  height: 20px;
+}
+#load {
+  display: none;
+}
+.appear {
+  display: none;
+}
+
+.appear_initial {
+  display: none;
+}
+#load:checked ~ .appear {
+  display: flex;
+}
+#load:checked ~ .appear_initial {
+  display: initial;
+}
+
+#load:checked ~ .load_more {
+  display: none;
+}
+
+@media screen and (max-width: 996px) {
+  .main .img_container img {
+    width: 45vw;
+    height: 30vw;
+  }
+  .img_container {
+    width: 45vw;
+    height: 30vw;
+  }
+  .main_section_small {
+    width: 45vw;
+    height: auto;
+  }
+  .content_wrap {
+    width: 100vw;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content_wrap {
+    flex-wrap: wrap;
+  }
+  .main .img_container img {
+    width: 85vw;
+    height: 60vw;
+  }
+  .img_container {
+    width: 85vw;
+    height: 60vw;
+  }
+  .main_section_small {
+    width: 85vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main label {
+    background-color: rgb(126, 116, 110);
+    border: none;
+  }
+}
+@media screen and (max-width: 232px) {
+  .main_title {
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
+}

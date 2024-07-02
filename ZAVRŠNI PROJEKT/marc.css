@@ -1,0 +1,192 @@
+@import url("./base.css");
+@import url("./header.css");
+@import url("./upper_navigation.css");
+@import url("./footer.css");
+@import url("./media_for_nav.css");
+.main_navigation ul {
+  padding-left: 0px;
+  padding-top: 20px;
+  justify-content: center;
+}
+.logo {
+  display: none;
+}
+:root {
+  --broj-slika: 4;
+}
+.car {
+  width: 100%;
+  height: 850px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: -38px;
+  z-index: 1;
+}
+.s_c {
+  z-index: 1000;
+  position: relative;
+  top: -650px;
+  text-align: center;
+}
+.s_c img {
+  width: 577px;
+}
+.car_container {
+  width: calc(100% * var(--broj-slika));
+  height: 100%;
+  display: flex;
+  animation: moves 60s linear infinite;
+}
+
+@keyframes moves {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + (100% / var(--broj-slika))));
+  }
+}
+.car_frame {
+  width: calc(100% / var(--broj-slika));
+  height: 100%;
+}
+.car_img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: -405px;
+  width: 100%;
+  z-index: 1;
+}
+.section_imgs {
+  display: flex;
+  width: 100%;
+}
+.section_imgs_spec {
+  display: flex;
+  width: 100%;
+}
+.image_container {
+  overflow: hidden;
+  width: 50%;
+  height: 630px;
+  position: relative;
+}
+.main_article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+.title_main {
+  font-family: "Marcellus SC";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+#bold {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.main_article article {
+  font-family: "Ibarra Real Nova";
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 25.2px;
+  margin: 30px 0px;
+}
+.main_article button {
+  border: none;
+  background-color: rgb(124, 114, 107);
+  font-family: "Marcellus SC";
+  font-size: 11.2px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 14px 28px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.main_article button:hover {
+  background-color: rgb(85, 73, 65);
+}
+.image_container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.footer_div {
+  margin-top: -380px;
+}
+@media screen and (max-width: 838px) {
+  .car {
+    top: -50px;
+  }
+}
+@media screen and (max-width: 818px) {
+  .car {
+    top: -80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .car {
+    top: 0px;
+  }
+  .logo {
+    display: initial;
+  }
+  .section_imgs {
+    flex-direction: column-reverse;
+  }
+  .section_imgs_spec {
+    flex-direction: column;
+  }
+  .image_container {
+    width: 100%;
+  }
+  .end2 {
+    visibility: visible;
+  }
+  .s_c img {
+    width: 60vw;
+  }
+  .main {
+    margin-top: 1px;
+    top: -292px;
+  }
+  .footer_div {
+    z-index: 2;
+    margin-top: -250px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .end2 {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .logo img {
+    width: 100px;
+  }
+  .title_main {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}

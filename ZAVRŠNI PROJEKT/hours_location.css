@@ -1,0 +1,157 @@
+@import url("./base.css");
+@import url("./header.css");
+@import url("./upper_navigation.css");
+@import url("./footer.css");
+@import url("./media_for_nav.css");
+:root {
+  --broj-slika: 4;
+}
+.car {
+  width: 100%;
+  height: 580px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  /* da sam stavila apsolute onda bi mi se donja navigacija nabila gore */
+  top: -140px;
+}
+.s_c {
+  z-index: 1000;
+  position: relative;
+  top: -450px;
+  left: 0px;
+  text-align: center;
+}
+.s_c p {
+  font-size: 60px;
+  letter-spacing: 25px;
+  font-weight: 600;
+  font-family: "Marcellus SC";
+  line-height: 0.8;
+}
+.car_container {
+  width: calc(100% * var(--broj-slika));
+  height: 100%;
+  display: flex;
+  animation: moves 60s linear infinite;
+}
+
+@keyframes moves {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + (100% / var(--broj-slika))));
+  }
+}
+.car_frame {
+  width: calc(100% / var(--broj-slika));
+  height: 100%;
+}
+.car_img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: -90px;
+  max-width: 600px;
+  font-size: 14px;
+  font-family: "Ibarra Real Nova";
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-top: -25px;
+}
+.links_on_main {
+  color: rgb(126, 116, 110);
+  margin-bottom: 14px;
+}
+.main p {
+  margin-bottom: 14px;
+}
+.p_b {
+  font-weight: bold;
+}
+.article_main {
+  margin: 40px 0px 30px;
+}
+.main ul {
+  margin-top: 15px;
+}
+.main ul li {
+  margin-bottom: 14px;
+}
+#spec_p {
+  margin: 29px 0px 29px 0px;
+}
+.map {
+  position: relative;
+  width: 100%;
+  height: 60vw;
+  margin-bottom: 20px;
+}
+.map_frame {
+  filter: grayscale(100%) brightness(0.4) opacity(0.8);
+  width: 100%;
+  height: 100%;
+}
+.button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  z-index: 1001;
+  padding: 14px 28px;
+  font-size: 13px;
+  font-family: "baker-signet-web";
+  font-weight: 300;
+  letter-spacing: 5px;
+  background-color: rgb(126, 116, 110);
+  cursor: pointer;
+  border: none;
+}
+@media screen and (max-width: 838px) {
+  .car {
+    top: -170px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .car {
+    top: 0px;
+  }
+  .main {
+    margin-top: 85px;
+  }
+  .s_c {
+    top: -350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .s_c p {
+    font-size: 45px;
+    letter-spacing: 20px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .logo img {
+    width: 100px;
+  }
+  .s_c p {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+}
+@media screen and (max-width: 255px) {
+  .s_c p {
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+}

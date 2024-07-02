@@ -1,0 +1,117 @@
+@import url("./base.css");
+@import url("./header.css");
+@import url("./upper_navigation.css");
+@import url("./footer.css");
+@import url("./media_for_nav.css");
+
+.main_title {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  font-size: 42px;
+  font-family: "Marcellus SC", serif;
+  text-align: center;
+  margin: 40px 0px 21px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main article {
+  max-width: 575px;
+  text-align: center;
+  margin: 10px 14px;
+  font-family: "Ibarra Real Nova";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.main a {
+  color: rgb(126, 116, 110);
+}
+.form_case {
+  display: flex;
+  justify-content: center;
+  max-width: 575px;
+}
+
+.form {
+  width: 100%;
+  margin: 73px 0px 0px;
+  font-family: "baker-signet-web";
+  font-weight: 700;
+  font-weight: bold;
+  font-size: 11px;
+  opacity: 1;
+}
+.label_spec {
+  color: rgb(182, 182, 182);
+  font-style: italic;
+}
+.form input {
+  margin-bottom: 10px;
+  height: 48px;
+  padding: 10.5px;
+  width: 100%;
+  color: rgba(34, 34, 34, 0.7);
+  font-size: 13px;
+  font-family: "baker-signet-web";
+}
+.form select {
+  margin-bottom: 10px;
+  height: 48px;
+  padding: 10.5px;
+  width: 100%;
+  color: rgba(34, 34, 34, 0.7);
+  font-size: 13px;
+  font-family: "baker-signet-web";
+}
+.form textarea {
+  padding: 10.5px;
+  height: 103;
+  width: 100%;
+  color: rgba(34, 34, 34, 0.7);
+  font-size: 13px;
+  font-family: "baker-signet-web";
+}
+.form button {
+  margin: 14px 0px 73px 40%;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-width: 1px;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  background-color: black;
+}
+.form button:hover {
+  background-color: rgb(182, 182, 182);
+  border-color: rgb(182, 182, 182);
+}
+@media screen and (min-width: 1920px) {
+  .form input {
+    width: ;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form button {
+    width: 100%;
+    background-color: rgb(126, 116, 110);
+    margin: 14px 0px 73px;
+    border: none;
+  }
+}
+@media screen and (max-width: 359px) {
+  .logo img {
+    width: 100px;
+  }
+  .main_title {
+    letter-spacing: 10px;
+    font-size: 22px;
+  }
+}

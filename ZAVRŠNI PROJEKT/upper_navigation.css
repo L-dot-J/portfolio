@@ -1,0 +1,98 @@
+.logo img {
+  width: 143px;
+  height: auto;
+  padding: 15px;
+}
+.nav_section {
+  padding: 0px 10px;
+  z-index: 10001;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0px;
+}
+
+.main_navigation ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 20px;
+  /* justify-content: center; */
+  gap: 20px;
+}
+.main_navigation ul li {
+  position: relative;
+  float: left;
+}
+.main_navigation ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Marcellus SC";
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 5px;
+  transition: color 1s;
+}
+.main_navigation ul li a:hover {
+  color: rgb(199, 185, 177);
+}
+.main_navigation ul li ul {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  background-color: black;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0px;
+}
+.main_navigation ul li ul li a {
+  padding: 10px 10px;
+  font-size: 11px;
+  letter-spacing: 5px;
+  font-family: "Marcellus SC";
+  font-weight: 700;
+}
+.main_navigation ul li:hover > ul {
+  display: flex;
+}
+
+#bar {
+  display: none;
+}
+.nav_section label {
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  color: rgb(199, 185, 177);
+}
+#hl {
+  color: rgb(199, 185, 177);
+}
+
+#main-nav_special {
+  font-family: "Marcellus SC";
+  font-size: 13px;
+  border: 1px solid white;
+  padding: 6.5px;
+  margin: 0px 6.5px;
+}
+#main-nav_special:hover {
+  border-color: rgb(199, 185, 177);
+}
+.adress_only {
+  display: none;
+  background-color: black;
+}
+.adress_only a {
+  text-decoration: none;
+  font-family: "baker-signet-web";
+  font-size: 12px;
+  padding: 20px 0px;
+  letter-spacing: 2px;
+}
